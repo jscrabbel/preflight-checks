@@ -1,0 +1,72 @@
+.heli {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.heli > div {
+    float: left;
+    margin: 10px 30px;
+}
+
+.control {
+    display: inline-block;
+    background: black;
+    color: #868686;
+    font-family: 'Antonio', serif;
+    width: 60px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.control.with-pill {
+    line-height: 36px;
+}
+
+.control.large {
+    width: 150px;
+}
+
+.control .pill {
+    width: 60%;
+    height: 6px;
+    background: #868686;
+    margin: 0 20%;
+    position: relative;
+}
+
+.control.with-pill[data-state=on], .control.with-pill[data-state=warning], .control.with-pill[data-state=off] {
+    color: white;
+}
+
+.control.with-pill[data-state=ready] {
+    color: #01d401;
+}
+
+.control[data-state=on], .control[data-state=ready] {
+    color: #01d401;
+}
+
+.control.with-pill[data-state=on] .pill, .control.with-pill[data-state=ready] .pill {
+    background: #01d401;
+}
+
+.control[data-state=off] {
+    color: #dc3545;
+}
+
+.control.with-pill[data-state=off] .pill {
+    background: #dc3545;
+}
+
+.control[data-state=warning] {
+    color: #ffc107;
+}
+
+.control.with-pill[data-state=warning] .pill {
+    background: #ffc107;
+}
