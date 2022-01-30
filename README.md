@@ -6,4 +6,4 @@ ensure preflight
 
 Works only with fivem.
 
-(c) jscrabbel Industries
+(c) jscrabbel Industries 2019-2022
